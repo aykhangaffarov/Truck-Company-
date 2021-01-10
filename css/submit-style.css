@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body {
+ margin:0;
+ background-color:#444444;
+	padding-top:20%;
+}
+#menu{
+	margin:auto;
+	text-align:center;
+	background-color:#fff6da;
+	height:40%;
+}
+#menu h1{
+	font: normal 3em ThreeDShadow;
+	color:#44000d;
+	padding-top:20px;
+}
+#menu a{
+	text-decoration:none;
+	color:#1c2938;
+	font: normal 1.25em ThreeDShadow;
+}
+#menu a:hover{
+	color:#6e9086;
+}
+

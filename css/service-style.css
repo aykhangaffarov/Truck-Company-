@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+body {
+ margin:0;
+}
+.container{
+	width:1200px;
+	margin:auto;
+	background-color:#93b5b3;
+}
+#header{
+        height:200px;
+}
+#header .container {
+	position: relative;
+}
+#header .container img{ 
+	position:absolute;
+	top:30px;
+	left:40px;
+	width:200px;
+	height:70px;
+}
+#menu {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	right: 80px;
+	top:30px;
+}
+#menu li {
+	font: normal 0.69em Tahoma;
+	color: #a0855b;
+	float: left;
+	padding: 0 50px 10px 10px;
+	border-left: 1px dotted #d6d6d6;
+}
+#menu li a {
+	font: bold 1.2em Tahoma;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #007065;
+	display: block;
+	margin-bottom:5px;
+}
+#menu li a:hover {
+	color:#ff8a5c;
+}
+
+#slide{
+    height: 200px;
+    margin: 0;
+}
+#slide .container{
+    text-align: center;
+	background-color:#032535;
+    border-radius: 7px;
+    box-shadow:0 0 5px 2px;
+}
+#slide .container p{
+    padding-top: 50px;
+	padding-bottom:50px;
+    font:normal 2em Tahoma;
+    color: #f2e3c9;
+}
+.container form{
+	text-align:center;
+	color:#4e3440;
+}
+.container form pre{
+	margin: 5px 0 0 0;
+	display:inline;
+}
+.container fieldset{
+	width:300px;
+	margin:0 50px 0 50px;
+	height:250px;
+	float:left;
+}
+.container h1{
+	display:inline;
+	
+}

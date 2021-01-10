@@ -1,0 +1,122 @@
+* { box-sizing: border-box; }
+body {
+ margin:0;
+ background-color:#1b1919;
+}
+.container{
+	width:1200px;
+	margin:auto;
+	background-color:#ffeecf;
+}
+#header{
+	height:800px;
+	background-image: url("../images/5.jpg");
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-position:center;
+	background-color: #cccccc;
+	box-shadow:0 0 10px 5px;
+}
+#header .container {
+	position: relative;
+}
+#header .container img{ 
+	position:absolute;
+	top:30px;
+	left:40px;
+	width:200px;
+	height:70px;
+}
+#menu {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	right: 80px;
+	top:30px;
+}
+#menu li {
+	font: normal 0.69em Tahoma;
+	color: #801336;
+	float: left;
+	padding: 0 50px 10px 10px;
+	border-left: 1px dotted #d6d6d6;
+}
+#menu li a {
+	font: bold 1.2em Tahoma;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fcf9ec;
+	display: block;
+	margin-bottom:5px;
+}
+#menu li a:hover {
+	color:#ccc1ff;
+}
+#blog .container{
+	margin-top:60px;
+	margin-bottom:30px;
+	height:600px;
+	background-color:#d9d9d9;
+	border-radius:20px;
+	box-shadow: 0 0 10px 10px;
+	text-align:center;
+}
+#blog .container h1{
+	font: normal 4em Tahoma;
+	color: #032d3c;
+	display:block;
+	padding-top:50px;
+	text-shadow: 2px 2px 4px #000;
+}
+#blog .container p{
+	font: normal 1em Tahoma;
+	color:#032d3c;
+	margin:10px 50px;
+}
+
+#blog .container img{
+	margin:20px 0 0 4%;
+	display:block;
+	float:left;
+	width:44%;
+	height:44%;
+	box-shadow: 0 0 5px 1px;
+}
+
+#box {
+	border: 2px solid #672f2f;
+	border-radius:10px;
+	box-shadow:0 0 5px 2px;
+	padding: 30px 20px 30px 20px;
+	width: 250px;
+	color: #672f2f;
+	position:absolute;
+	margin:200px 800px;
+	text-align:center;
+}
+#box p{
+	color:white;
+	font-size:1.05em;
+	font-weight:bold;
+}
+#contact{
+	height:100px;
+	background-color:black;
+}
+#contact h2{
+	margin-left:250px;
+	color:white;
+	display:block;
+	float:left;
+}
+#contact li{
+	list-style:none;
+	display:block;
+	float:left;
+	margin-left:10px;
+	margin-top:20px;	
+}
+#contact img{
+	width:32px;
+	height:32px;
+}

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Services</title>
+		<link rel="stylesheet" href="css/service-style.css" />
+        <script>
+		function give(){
+			var check=0;
+			if(document.getElementById("one").checked) check=1;
+			if(document.getElementById("two").checked) check=2;
+			if(document.getElementById("three").checked) check=3;
+			if(document.getElementById("four").checked) check=4;
+			if(document.getElementById("five").checked) check=5;
+			var ceki=document.getElementById("ceki").value;
+			if(ceki!=0){ 
+			document.getElementById("price").innerHTML=ceki*0.5+check*10;
+			}
+			if(ceki==null || ceki==0){
+			var sofa=document.getElementById("sofa").value;
+			var bed=document.getElementById("bed").value;
+			var mebel=document.getElementById("mebel").value;
+			var carpet=document.getElementById("carpet").value;
+			var table=document.getElementById("table").value;
+			document.getElementById("price").innerHTML=sofa*5+bed*10+mebel*15+carpet*5+table*5+check*10;
+			}
+			}
+		</script>
+    </head>
+    <body>  
+        <div id="header">
+			<div class="container">
+			<img src="images/logoo.png" alt="logo"/>
+				<ul id="menu">
+					<li><a href="">Home</a>Back to home</li>
+					<li><a href="admin.jsp">Products</a>What we have for you</li>
+					<li><a href="login.jsp">Services</a>Things we do</li>
+					<li><a href="#blog">Blog</a>Follow our updates</li>
+					<li><a href="#contact">Contact</a>Ways to reach us</li>
+				</ul>
+			</div>
+			
+		</div>
+        <div id="slide">
+            <div class="container">
+                <p>Choose your lugagge, forget about the rest.<br/>Order now!</p>
+            </div>
+        </div>
+		<div class="container">
+			<form  oninput="give()">
+			<fieldset>
+				<legend>Lugagge</legend>
+				<br/>
+					<pre>  Sofa </pre><input type="number" id="sofa" min="0" max="10" >  <br/><br/>
+					<pre>   Bed </pre><input type="number" id="bed" min="0" max="10"> <br/><br/>
+					<pre> Mebel </pre><input type="number" id="mebel" min="0" max="10"> <br/><br/>
+					<pre>Carpet </pre><input type="number" id="carpet" min="0" max="10"> <br/><br/>
+					<pre> Table </pre><input type="number" id="table" min="0" max="10"> <br/><br/>
+			</fieldset>
+			<fieldset>
+				<legend>Number of workers</legend>
+				<br/>
+					 <input type="radio" name="num" value="1"> <p class="answer"></p><br/><br/>
+					 <input type="radio" name="num" value="2"> <p class="answer">2</p><br/><br/>
+					 <input type="radio" name="num" value="3"> <p class="answer">3</p><br/><br/>
+					 <input type="radio" name="num" value="4"> <p class="answer">4</p><br/><br/>
+					 <input type="radio" name="num" value="5"> <p class="answer">5</p><br/><br/>
+			</fieldset>
+			<fieldset>
+				<legend>Net masso</legend>
+				<br/>
+				<br/>
+				<br/>
+					<pre>Weight </pre><input type="number" id="ceki" min="0" max="1000000"> <br/>
+			</fieldset>
+			<h1>Price:</h1>
+			<h1 id="price">0<h1/>
+			<br/>
+			<input type="submit">
+			<br/>
+			</form>
+		</div>
+    </body>
+</html>
